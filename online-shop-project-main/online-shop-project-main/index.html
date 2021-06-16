@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Clothes</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <!-- any other links will be here. -->
+  </head>
+  <body>
+    <!-- header here, to Boss. -->
+    
+    <div class="header">
+      <div class="header-right">
+        <a class="active" href="#home">Home</a>
+        <a class="product" href="view/product.html">Products</a>
+        <a class="cart" href="view/cart.html">Cart</a>
+        <a class="about" href="view/about.html">AboutUs</a>
+      </div>
+    </div>
+
+    <!-- the main contanier here, to the other Boss (Eng.Marwan, lol).-->
+
+    <div class="mani-body-container">
+      <!-- main div -->
+      <!-- container div -->
+      <div class="containerImage center">
+        <h3>WELCOME TO NAV CLOTHING</h3>
+        <p class="para" id="imgP">
+          &#8681; here you can find all of our awesome T-Shirts! &#8681;
+        </p>
+        <img class="view-item" id="ContImg" src="images/t-shirts.jpg" alt="t-shirts" />
+        <div class="nextPrevButtons">
+          <!-- Two Buttons div -->
+          <a id="next" class="next" >&#10095;</a> <!-- onclick="next()" -->
+          <a id="prev" class="prev" >&#10094;</a> <!-- onclick="prev()" -->
+        </div>
+        <div class="center">
+          <!-- h1 and p div -->
+          <h1 class="text" id="imgH1">Our T-Shirts Brand</h1>
+          <div class="dotDiv center">
+            <span id="dot0" class="dot active" ></span> <!-- onclick="setImgNumber(0)" -->
+            <span id="dot1" class="dot" ></span> <!-- onclick="setImgNumber(1)" -->
+            <span id="dot2" class="dot" ></span> <!-- onclick="setImgNumber(2)" -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Local Storage -->
+
+    <div class=" center">
+      <div class="containerImage">
+    <p id="p1">Enter your E-mail, so we can update you about the newest collection!</p>
+    <input id="input" type="text" >
+    <button id="btn" type="button">Enter Email</button>
+       </div>
+    </div>
+
+        <!-- footer here, to mohammed. -->
+  </br>
+</br>
+<footer>
+<div class="footer">
+  <div class="center">
+ 
+    </br>
+<div class="foll" > <h4> follow us: </h4> </div>
+<div class="face" >
+    <a  href="http://www.facebook.com" target="_blank"> 
+    <div class="i" > <i class="fab fa-facebook-f"></i> </div> </a>
+</div>
+<div class="twit" >
+    <a  href="http://www.twitter.com" target="_blank"> 
+    <div class="i" > <i class="fab fa-twitter"></i> </div> </a>
+</div>
+<div class="insta" >
+    <a  href="http://www.instagram.com" target="_blank"> 
+    <div class="i" > <i class="fab fa-instagram"></i> </div> </a>
+</div>
+<div class="yout" > 
+   <a  href="http://www.youtube.com" target="_blank"> 
+   <div class="i" > <i class="fab fa-youtube"></i> </div> </a>
+</div>
+    
+</div> 
+  </br>	  
+</br>
+</br>
+<div class="rightt"  >
+    <div class="paim" > <h4>Paimant by :</4> </div>	
+
+<div id ="pay" ></div>
+    <!--<a  href="https://www.paypal.com" target="_blank">
+    <img src="fotter-images/ssss.png" width="75" /> </a>-->
+<div id ="master" ></div>
+    <!--<a  href="http://www.mastercard.us" target="_blank"> 
+    <img src="fotter-images/mastercard.png" width="45" /> </a>-->
+<div id="visa" ></div>
+    <!--<a  href="https://usa.visa.com/" target="_blank"> 
+    <img src="fotter-images/visa.png" width="60" /> </a>-->		
+</br>
+</br>
+</br>   
+<div class="copy" >
+    <p align="center">
+    &copy;2021 NAV clothing shop. All Rights Reserved
+    </p>
+</div>
+</div>
+</footer>
+
+
+    <script src="src/buttonsMVC.js"></script>
+    <script src="src/localStorageMVC.js"></script>
+    <script src="src/buttonsiconse.js"></script>
+  </body>
+</html>

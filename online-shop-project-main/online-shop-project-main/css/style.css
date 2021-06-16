@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+/* ----------------------- Header Style ------------------------- */
+body {
+  margin: 0px;
+  background-color: #beb9aa;
+}
+
+.header {
+  overflow: hidden;
+  background-color: floralwhite;
+  /* padding: 10px 10px 0 0; */
+  margin-top: 1px;
+  padding-top: 10px;
+  background-image: url('../images/logo.png');
+  background-position: center;
+  background-size: auto;
+  height: 100px;
+}
+
+.header a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a:hover {
+  background-color: #ddd;
+}
+
+.header a.active {
+  background-color: darkmagenta;
+  font-family: monospace;
+  color: white;
+}
+
+.header a.cart {
+  background-color: darkmagenta;
+  font-family: monospace;
+  color: white;
+}
+
+.header a.about {
+  background-color: brown;
+  font-family: monospace;
+  color: white;
+}
+
+.header a.product {
+  background-color: brown;
+  font-family: monospace;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+
+/* ----------------------- Main Container Style ---------------------- */
+
+.containerImage {
+  position: relative;
+  padding-top: 80px;
+  user-select: none;
+}
+
+.view-item {
+  width: 800px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer; /* change the mouse pointer to click */
+  position: absolute; 
+  margin-left: 21rem; /* == 335px */
+  margin-right: 21rem; 
+  /* width: auto; */
+  padding: 50px 25px 50px 25px;
+  color: rgb(255, 255, 255); 
+  font-weight: bold;
+  font-size: 1.6rem;
+  transition: 0.6s ease;
+  /* border-radius: 0 3px 3px 0; */
+  user-select: none;
+}
+
+/* next and previous buttons div */
+.nextPrevButtons{
+  background-color: rgb(68, 52, 52);
+  color: #000;
+  position: absolute;
+  top: 51%;
+  left: 50%;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  right: 0;
+  /* border-radius: 3px 0 0 3px; */
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(46, 41, 41, 0.8);
+}
+
+.text {
+  position: absolute;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 1.5rem;
+  bottom: 2.5rem;
+  width: 100%;
+  user-select: none;
+}
+
+.para{
+  font-style: italic;
+  color: #000000;
+  font-size: 1.5rem;
+  margin-top: 0px;
+  margin-bottom: 60px;
+  user-select: none;
+}
+
+.center{
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
+/* The three dots buttons */
+
+.dotDiv{
+  user-select: none;
+  margin-top: 10px;
+  margin-bottom: 1.2rem;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 3px;
+  background-color: #868172;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color:#444343;
+}
+/* ------------- cart button ----------- */
+
+.btn {
+	color: #494949 !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #ffffff;
+	padding: 20px;
+	border: 1px solid #494949 !important;
+	display: inline-block;
+	transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+
+.btn:hover {
+	color: #ffffff !important;
+	background: #e6d3af;
+	border-color: #c7b289 !important;
+	transition: all 0.5s ease 0s;
+}
+
+
+
+/* ---------------------------------------------------------------- */
+
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+/* the container will be smller in screen size of 850px and smaller. */
+@media only screen and (max-width: 850px) {
+  .view-item {
+    width: 700px;
+    height: 350px;
+  }
+  .prev, .next {
+    margin-left: 17.9rem; /* == 335px */
+    margin-right: 17.9rem; 
+  }
+  .containerImage {
+    padding-top: 75px;
+  }
+}
+
+/****************************************/
+
+.footer {
+	padding:3px;
+	bottom:0;
+	width:100%;
+    background-color:dddd;
+	color:black;
+	margin-top:-40px;
+	padding-bottom:0px;
+	/*clear:both;*/
+	text-align:center;
+	background-attachment:fixed;
+}
+
+.foll{
+	font-family:"Courier New";
+	text-align:center;
+}
+
+.paim {
+   font-family:"Courier New";
+   text-align:center;
+}
+
+.input{
+   border-radius:5px;
+   background-color:silver;
+   margin-top:40px;
+   margin-bottom:0px;
+   color:black;
+}
+
+.btn{
+   border-radius:5px;
+   background-color:silver;
+   margin-top:40px;
+   margin-bottom:0px;
+   color:white;
+}
+
+.rightt{
+    margin-top:40px;
+	margin-bottom:0px;
+}
+
+.i{
+	color:brown;
+	font-size:20px;
+	list-style:none;
+	display:inline-block;
+	border: 1px solid #fff;
+	border-radius:50%;
+	/*transition: .5s;*/
+	padding: 10px 10px;
+	font-size: 20px;
+	margin:1px 10px;
+}
+
+.i:hover{
+	color:#292929;
+	border:1px solid #292929;
+	/*transition: .5s;*/
+}
+
+.face{
+	margin-left:560px;
+	float:left;
+	color:white;
+}
+
+.twit{
+	margin-left:0px;
+	float:left;
+	color:white;
+}
+
+.insta {
+	margin-left:0px;
+	float:left;
+	color:white;
+}
+
+.yout {
+	margin-left:0px;
+	float:left;
+	color:white;
+}
+
+#masterr {
+	margin-left:10px;
+	float:left;
+	font-size:35px;
+	color:#292929;
+	height:35px;
+}
+
+#payy {
+	margin-left:570px;
+	float:left;
+	color:#292929;
+	font-size:35px;
+	height:35px;
+}
+
+#visaa {
+	margin-left:10px;
+	height:35px;
+	float:left;
+	font-size:1px;
+}
+
+.copy {
+	text-align:center;
+	clear:both;
+}
